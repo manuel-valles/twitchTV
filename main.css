@@ -3,3 +3,59 @@ body{
   font-family: 'Patrick Hand SC', cursive;
   line-height: 140%;
 }
+
+.container{
+  margin: 100px auto;
+  min-height: 1000px;
+}
+#header{
+  margin: 100px auto 50px;
+  padding: 20px;
+}
+h1{
+  color: rgb(75,54,124);
+  margin-bottom: 40px;
+}
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  font-weight: bold;
+}
+h3{
+  font-size: 250%;
+  margin-bottom: 10px;
+}
+h3:first-child:hover{
+  font-weight: bold;
+}
+.fa{
+  font-size: 200%;
+  color: rgb(75,54,124);
+}
+.btn{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 150%;
+}
+img{
+  height: 120px;
+  border-radius: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin: 20px auto;
+  font-size: 200%;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+.row:nth-child(2n+1){
+  background: rgba(0,0,0,0.05);
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>TwitchTV App</title>
 	<!-- Bootstrap CDN -->
 	<!-- Latest compiled and minified CSS -->
@@ -15,8 +16,29 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	
-
+	<div class="container text-center">
+	  <div id="header" class="text-center">
+	    <h1 class = "display-1">TwitchTV</h1>
+	    <a href="https://www.twitch.tv/freecodecamp" target="_blank">
+		    <h3 id="fccStatus"></h3>
+		    <i class="fa fa-free-code-camp"></i>
+	    </a>
+	  </div>
+	  <h3>CHANNELS</h3>
+	  <div class="btn-group">
+	    <button class="btn btn-primary" id="all">All</button>
+	    <button class="btn" id="onLine">ON-Line</button>
+	    <button class="btn" id="offLine">OFF-Line</button>
+	  </div>
+	  <div id="channelOn">
+	  </div>
+	  <hr/>
+	  <div id="channelOff">
+	  </div>
+	  <hr />
+	  <div id="noChannel">
+	  </div>
+	</div>
 	<!-- jQuery CDN -->
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
