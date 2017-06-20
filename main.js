@@ -37,13 +37,13 @@ $(function(){
 			// console.log(data3); //Testing
 				if(data3.stream != null){
 					$("#channelOn").prepend(
-						'<div class="row online"><div class="col-md-4"><img src="'+ logo + '"></div><div class="col-md-4"><a href="https://www.twitch.tv/'
-				        + name +'" target="_blank">' + name + '</a></div><div class="col-md-4 green">ON-line !<br/><br/><span class="small text-muted">' 
+						'<div class="row online"><div class="col-4"><img src="'+ logo + '"></div><div class="col-4"><a href="https://www.twitch.tv/'
+				        + name +'" target="_blank">' + name + '</a></div><div class="col-4 green">ON-line !<br/><br/><span class="small text-muted">' 
 				        + status+'</span></div></div>');
 				} else{
 					 $("#channelOff").append(
-					 	'<div class="row offline"><div class="col-md-4"><img src="'+ logo + '"></div><div class="col-md-4"><a href="https://www.twitch.tv/'
-					    + name +'" target="_blank">' + name + '</a></div><div class="col-md-4 red">OFF-Line</div></div>');
+					 	'<div class="row offline"><div class="col-4"><img src="'+ logo + '"></div><div class="col-4"><a href="https://www.twitch.tv/'
+					    + name +'" target="_blank">' + name + '</a></div><div class="col-4 red">OFF-Line</div></div>');
 				}
 			});
 	   } else{
@@ -53,8 +53,8 @@ $(function(){
 			name = data2.message;
 			status = data2.error;
 			$("#noChannel").append(
-				'<div class="row"><div class="col-md-4"><img src="'+ logo + '"></div><div class="col-md-4">' 
-				+ name + '</div><div class="col-md-4">'+ status +'</div></div>');
+				'<div class="row"><div class="col-4"><img src="'+ logo + '"></div><div class="col-4">' 
+				+ name + '</div><div class="col-4">'+ status +'</div></div>');
 	   }
 	 });
 	}

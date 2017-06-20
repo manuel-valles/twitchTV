@@ -1,54 +1,59 @@
 body{
   background: url("http://manuel-valles.com/project/twitchTV/img/bg2.png");
   font-family: 'Patrick Hand SC', cursive;
-  line-height: 140%;
+  line-height: 80%;
 }
-
 .container{
-  margin: 100px auto;
+  margin: 50px auto;
   min-height: 1000px;
+  min-width: 300px;
 }
 #header{
-  margin: 100px auto 50px;
   padding: 20px;
 }
 h1{
   color: rgb(75,54,124);
-  margin-bottom: 40px;
 }
 a{
   text-decoration: none !important;
+  font-size: 120%;
 }
 a:hover{
   font-weight: bold;
 }
 h3{
-  font-size: 250%;
-  margin-bottom: 10px;
+  margin: 40px auto 10px;
 }
-h3:first-child:hover{
+h3:hover{
   font-weight: bold;
 }
 .fa{
-  font-size: 200%;
+  font-size: 150%;
   color: rgb(75,54,124);
 }
 .btn{
   font-family: 'Patrick Hand SC', cursive;
-  font-size: 150%;
 }
 img{
-  height: 120px;
+  height: 80px;
   border-radius: 10px;
 }
 .row{
   display: flex;
   align-items: center;
-  height: 150px;
-  margin: 20px auto;
-  font-size: 200%;
+  min-height: 100px;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 10px;
   background: whitesmoke;
   border-radius: 20px;
+}
+@media (min-width: 768px) { 
+
+	.row{
+		font-size: 150%;
+		line-height: 75%;
+	}
 }
 .row:nth-child(2n+1){
   background: rgba(0,0,0,0.05);
